@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terminal</title>
-    <link>/</link>
+    <link>https://flyingwonton.github.io/</link>
     <description>Recent content on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Sep 2020 11:59:03 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Sep 2020 11:59:03 +0200</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Myfirstpost</title>
-      <link>/post/myfirstpost/</link>
+      <title>A second post</title>
+      <link>https://flyingwonton.github.io/post/my-second-post/</link>
       <pubDate>Sat, 19 Sep 2020 11:59:03 +0200</pubDate>
       
-      <guid>/post/myfirstpost/</guid>
-      <description>prova prova prova 1</description>
+      <guid>https://flyingwonton.github.io/post/my-second-post/</guid>
+      <description>This is not draft anymore</description>
     </item>
     
     <item>
-      <title>second posr</title>
-      <link>/post/my-second-post/</link>
+      <title>Myfirstpost</title>
+      <link>https://flyingwonton.github.io/post/myfirstpost/</link>
       <pubDate>Sat, 19 Sep 2020 11:59:03 +0200</pubDate>
       
-      <guid>/post/my-second-post/</guid>
-      <description>this i not a draft anymore</description>
+      <guid>https://flyingwonton.github.io/post/myfirstpost/</guid>
+      <description>This is a test.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://flyingwonton.github.io/about/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://flyingwonton.github.io/about/</guid>
       <description>Hi there My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
 We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
 This theme is pretty basic and covers all of the essentials. All you have to do is start typing!</description>
@@ -38,20 +38,20 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
     
     <item>
       <title>Hello Friend</title>
-      <link>/post/hello/</link>
+      <link>https://flyingwonton.github.io/post/hello/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/hello/</guid>
+      <guid>https://flyingwonton.github.io/post/hello/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
  Fusce pharetra suscipit orci nec tempor.</description>
     </item>
     
     <item>
       <title>Showcase</title>
-      <link>/showcase/</link>
+      <link>https://flyingwonton.github.io/showcase/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/showcase/</guid>
+      <guid>https://flyingwonton.github.io/showcase/</guid>
       <description>Header 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.</description>
     </item>
     
