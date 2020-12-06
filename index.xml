@@ -1,58 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Terminal</title>
+    <title>Love letters to my future self</title>
     <link>https://flyingwonton.github.io/</link>
-    <description>Recent content on Terminal</description>
+    <description>Recent content on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Sep 2020 11:59:03 +0200</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A second post</title>
-      <link>https://flyingwonton.github.io/post/my-second-post/</link>
-      <pubDate>Sat, 19 Sep 2020 11:59:03 +0200</pubDate>
+      <title>Read more?</title>
+      <link>https://flyingwonton.github.io/post/read-more/</link>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/my-second-post/</guid>
-      <description>This is not draft anymore</description>
-    </item>
-    
-    <item>
-      <title>Myfirstpost</title>
-      <link>https://flyingwonton.github.io/post/myfirstpost/</link>
-      <pubDate>Sat, 19 Sep 2020 11:59:03 +0200</pubDate>
-      
-      <guid>https://flyingwonton.github.io/post/myfirstpost/</guid>
-      <description>This is a test.</description>
+      <guid>https://flyingwonton.github.io/post/read-more/</guid>
+      <description>Per quanto read more alla fine dei post si presti perfettamente allo scopo, una delle feature di Hugo è sicuramente la sua capacità di personalizzazione.
+Come personalizzare il read more in Hugo È una cosa estremamente banale ma non avendola trovata altrove la segno di seguito. Di default, Hugo prende dal file di configurazione config.toml la stringa da apporre. Segue un estratto del file, si faccia riferimento al parametro &amp;ldquo;readMore&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>About</title>
       <link>https://flyingwonton.github.io/about/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://flyingwonton.github.io/about/</guid>
-      <description>Hi there My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
-This theme is pretty basic and covers all of the essentials. All you have to do is start typing!</description>
+      <description>Ciao Non ho talenti o expertise particolari. Mi rompo la testa sulle cose finché non funzionano.
+Se come disse Damian Conway:
+ Documentation is a love letter that you write to your future self.
+ Questa può essere considerata una raccolta di post piena di sentimento.</description>
     </item>
     
     <item>
-      <title>Hello Friend</title>
+      <title>Deployare Hugo su GitHub pages</title>
       <link>https://flyingwonton.github.io/post/hello/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://flyingwonton.github.io/post/hello/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
- Fusce pharetra suscipit orci nec tempor.</description>
-    </item>
-    
-    <item>
-      <title>Showcase</title>
-      <link>https://flyingwonton.github.io/showcase/</link>
-      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://flyingwonton.github.io/showcase/</guid>
-      <description>Header 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.</description>
+      <description>Questo sito è basato su Hugo, generatore di siti statici scritto in Go. Hugo crea siti veloci e relativamente semplici da far girare. L&amp;rsquo;inghippo sta nel relativamente.
+Gli assunti da cui parto sono i seguenti:
+ Hugo è stato installato. Diversamente, si faccia riferimento qui. Il setup di Hugo e la configurzione del tema è stato completato e testato in locale.  Deploy su GitHub Pages A questo punto, l&amp;rsquo;unica cosa che manca è deployare Hugo.</description>
     </item>
     
   </channel>
