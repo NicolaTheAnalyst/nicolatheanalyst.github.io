@@ -6,7 +6,18 @@
     <description>Recent content on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concatenazione di celle verticali su Excel</title>
+      <link>https://flyingwonton.github.io/post/concatenate/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://flyingwonton.github.io/post/concatenate/</guid>
+      <description>L&amp;rsquo;esigenza è particolarmente banale ma visto che mi ci sono imbattuto più di qualche volta, vale la pena segnarsela.
+Come concatenare celle verticali su Excel La situazione di partenza è la seguente:
+             elemento1       elemento2       elemento3       Per ottenere, ad esempio:</description>
+    </item>
+    
     <item>
       <title>Read more?</title>
       <link>https://flyingwonton.github.io/post/read-more/</link>
