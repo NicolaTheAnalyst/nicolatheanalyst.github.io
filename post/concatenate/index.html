@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="L&amp;rsquo;esigenza è particolarmente banale ma visto che mi ci sono imbattuto più di qualche volta, vale la pena segnarsela.
 Come concatenare celle verticali su Excel La situazione di partenza è la seguente:
-             elemento1       elemento2       elemento3       Per ottenere, ad esempio:" />
+    A B C D     1 elemento1      2 elemento2      3 elemento3       Per ottenere, ad esempio:" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://flyingwonton.github.io/post/concatenate/" />
@@ -143,29 +143,29 @@ Come concatenare celle verticali su Excel La situazione di partenza è la seguen
 <thead>
 <tr>
 <th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>1</td>
 <td>elemento1</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>2</td>
 <td>elemento2</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>3</td>
 <td>elemento3</td>
 <td></td>
 <td></td>
@@ -176,8 +176,8 @@ Come concatenare celle verticali su Excel La situazione di partenza è la seguen
 <p>Per ottenere, ad esempio:</p>
 <pre><code> elemento1;elemento2;elemento3;
 </code></pre><p>È sufficiente, iniziare una formula e selezionare le celle verticali, aggiungedo il separatore come suffisso <strong>&amp;&quot;;&quot;</strong>. E.g:</p>
-<pre><code>=B3:B5&amp;&quot;;&quot;
-</code></pre><p>Riselezionre la formula e premere F9 per convertire la formula in valori:</p>
+<pre><code>=A1:A3&amp;&quot;;&quot;
+</code></pre><p>Riselezionare la formula e premere F9 per convertire la formula in valori:</p>
 <pre><code>={&quot;elemento1;&quot;;&quot;elemento2;&quot;;&quot;elemento3;&quot;}
 </code></pre><p>A questo punto sarà sufficiente eliminare le parentesi graffe e aggiungergi la funzione concatenate aka concatenate</p>
 <pre><code>=CONCATENATE(&quot;elemento1;&quot;;&quot;elemento2;&quot;;&quot;elemento3;&quot;)
