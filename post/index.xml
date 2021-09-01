@@ -6,19 +6,7 @@
     <description>Recent content in Posts on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Come lasciare uno script avviato da remoto</title>
-      <link>https://flyingwonton.github.io/post/keep-running-ssh/</link>
-      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://flyingwonton.github.io/post/keep-running-ssh/</guid>
-      <description>In breve, (tra le varie possibilità) attraverso il comando nohup, il quale:
- esegue un altro comando facendogli ignorare il segnale SIGHUP, in modo da permettergli di proseguire l&amp;rsquo;esecuzione anche in caso di una disconnessione dal terminale, o della chiusura dell&amp;rsquo;emulatore di terminale.
- Ovvero:
-sudo nohup python3 script.py &amp;amp; </description>
-    </item>
-    
+    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concatenazione di celle verticali su Excel</title>
       <link>https://flyingwonton.github.io/post/concatenate/</link>
