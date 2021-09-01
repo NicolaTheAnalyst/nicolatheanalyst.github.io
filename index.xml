@@ -6,7 +6,19 @@
     <description>Recent content on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Come lasciare uno script avviato da remoto</title>
+      <link>https://flyingwonton.github.io/post/keep-running-ssh/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://flyingwonton.github.io/post/keep-running-ssh/</guid>
+      <description>In breve, (tra le varie possibilità) attraverso il comando nohup, il quale:
+ esegue un altro comando facendogli ignorare il segnale SIGHUP, in modo da permettergli di proseguire l&amp;rsquo;esecuzione anche in caso di una disconnessione dal terminale, o della chiusura dell&amp;rsquo;emulatore di terminale.
+ Ovvero:
+sudo nohup python3 script.py &amp;amp; </description>
+    </item>
+    
     <item>
       <title>Concatenazione di celle verticali su Excel</title>
       <link>https://flyingwonton.github.io/post/concatenate/</link>
@@ -49,18 +61,6 @@ Se come disse Damian Conway:
       <description>Questo sito è basato su Hugo, generatore di siti statici scritto in Go. Hugo crea siti veloci e relativamente semplici da far girare. L&amp;rsquo;inghippo sta nel relativamente.
 Gli assunti da cui parto sono i seguenti:
  Hugo è stato installato. Diversamente, si faccia riferimento qui. Il setup di Hugo e la configurzione del tema è stato completato e testato in locale.  Deploy su GitHub Pages A questo punto, l&amp;rsquo;unica cosa che manca è deployare Hugo.</description>
-    </item>
-    
-    <item>
-      <title>Come lasciare uno script avviato da remoto</title>
-      <link>https://flyingwonton.github.io/post/keep-running-ssh/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://flyingwonton.github.io/post/keep-running-ssh/</guid>
-      <description>In breve, (tra le varie possibilità) attraverso il comando nohup, il quale:
- esegue un altro comando facendogli ignorare il segnale SIGHUP, in modo da permettergli di proseguire l&amp;rsquo;esecuzione anche in caso di una disconnessione dal terminale, o della chiusura dell&amp;rsquo;emulatore di terminale.
- Ovvero:
-sudo nohup python3 script.py &amp;amp; </description>
     </item>
     
   </channel>
