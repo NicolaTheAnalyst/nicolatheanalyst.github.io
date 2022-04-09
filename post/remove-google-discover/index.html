@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>How to remove Google discover \ google feed from home screen :: Love letters to my future self</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The issue. Google discover is the feed curated by Google to deliver articles and videos on (mostly) android smarpthones: it&amp;rsquo;s often enabled by default and put on the phone home screen. As if this wasn&amp;rsquo;t annoying enough, sometimes it cannot be disabled in the Google App settings and need to be turned off via terminal.
+The solution(s). Turn off google discover in the settings. As already written here:
+ In the Google App At the top right, tap your Profile picture or initial Settings General Turn off Discover  If the option is available this should do the trick." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://flyingwonton.github.io/post/remove-google-discover/" />
+
+
+
+
+<link rel="stylesheet" href="https://flyingwonton.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://flyingwonton.github.io/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://flyingwonton.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://flyingwonton.github.io/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to remove Google discover \ google feed from home screen :: Love letters to my future self">
+<meta property="og:description" content="A simple guide" />
+<meta property="og:url" content="https://flyingwonton.github.io/post/remove-google-discover/" />
+<meta property="og:site_name" content="How to remove Google discover \ google feed from home screen" />
+
+  
+    <meta property="og:image" content="https://flyingwonton.github.io/img/favicon/green.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2022-04-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Love letters to my future self
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://flyingwonton.github.io/post/remove-google-discover/">How to remove Google discover \ google feed from home screen</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2022-04-09 [Updated: 2022-04-09]
+      </span>
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="the-issue">The issue.<a href="#the-issue" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Google discover is the feed curated by Google to deliver articles and videos on (mostly) android smarpthones: it&rsquo;s often enabled by default and put on the phone home screen. As if this wasn&rsquo;t annoying enough, sometimes it cannot be disabled in the Google App settings and need to be turned off via terminal.</p>
+<h2 id="the-solutions">The solution(s).<a href="#the-solutions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="turn-off-google-discover-in-the-settings">Turn off google discover in the settings.<a href="#turn-off-google-discover-in-the-settings" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>As already written <a href="https://support.google.com/websearch/answer/9504726?hl=en&amp;co=GENIE.Platform=Android&amp;oco=0">here</a>:</p>
+<ul>
+<li>In the Google</li>
+<li>App At the top right, tap your Profile picture or initial</li>
+<li>Settings</li>
+<li>General</li>
+<li>Turn off <strong>Discover</strong></li>
+</ul>
+<p><strong>If</strong> the option is available this should do the trick.</p>
+<h3 id="turn-off-google-discover-with-adb">Turn off google discover with Adb.<a href="#turn-off-google-discover-with-adb" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><a href="https://developer.android.com/studio/debug/dev-options">Enable developer tools</a> on your phone</li>
+<li>Install Adb (How? Downloading and installing Android Studio is the easiest way - however standalone adb installation are also available)</li>
+<li>Connect the phone to the computer with a USB cable (sure, <a href="https://developer.android.com/studio/command-line/adb#connect-to-a-device-over-wi-fi-android-11+">Android 11 and higher supports deploying and debugging wirelessly</a> but via USB is the easiest way)
+with the command:</li>
+</ul>
+<blockquote>
+<p>adb devices</p>
+</blockquote>
+<p>you can verify that your device is connected.</p>
+<ul>
+<li>Once you are connected use this command from the computer console to disable google discover:</li>
+</ul>
+<blockquote>
+<p>adb shell pm disable-user &ndash;user 0 com.google.android.googlequicksearchbox</p>
+</blockquote>
+<ul>
+<li>Afterwards, you can reboot your phone with the command:</li>
+</ul>
+<blockquote>
+<p>adb reboot</p>
+</blockquote>
+<p>And your ✨done✨! 
+PS: this only <strong>disables</strong> the app - it does <strong>NOT unistall it</strong> - in order to do that, the root access is more than likely needed.</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://flyingwonton.github.io/post/inner-join/">
+                <span class="button__text">Inner join con pandas</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+<div style="width:100%; text-align:center;">
+  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2022 Powered by <a href="http://gohugo.io">Hugo</a></div>
+</div>
+</footer>
+
+<script src="https://flyingwonton.github.io/assets/main.js"></script>
+<script src="https://flyingwonton.github.io/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
