@@ -7,7 +7,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Assumendo di avere due file con entrambi una colonna &amp;ldquo;Col1&amp;rdquo; da voler confrontare, con 5 (cinque) righe in python possiamo risparmiarci qualche improperio su Excel.
-import pandas as pddf1 = pd.read_excel(&#39;input.xlsx&#39;) #assumiamo il primo file si chiami input.xlsxdf2 = pd.read_excel(&#39;input2.xlsx&#39;) #assumiamo il primo file si chiami input2.xlsxdf = pd.merge(df1, df2, on = &amp;quot;Col1&amp;quot;, how = &#39;inner&#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&#39;è corrispondenza tra &amp;quot;Col1&amp;quot; nel df1 e &amp;quot;Col1&amp;quot; del df2df." />
+import pandas as pdimport openpyxl #necessario per l&#39;export in xlsxdf1 = pd.read_excel(&#39;input.xlsx&#39;) #assumiamo il primo file si chiami input.xlsxdf2 = pd.read_excel(&#39;input2.xlsx&#39;) #assumiamo il primo file si chiami input2.xlsxdf = pd.merge(df1, df2, on = &amp;quot;Col1&amp;quot;, how = &#39;inner&#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&#39;è corrispondenza tra &amp;quot;Col1&amp;quot; nel df1 e &amp;quot;Col1&amp;quot; del df2df." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://flyingwonton.github.io/post/inner-join/" />
@@ -137,6 +137,7 @@ import pandas as pddf1 = pd.read_excel(&#39;input.xlsx&#39;) #assumiamo il prim
   <div class="post-content"><div>
         <p>Assumendo di avere due file con entrambi una colonna &ldquo;Col1&rdquo; da voler confrontare, con 5 (cinque) righe in python possiamo risparmiarci qualche improperio su Excel.</p>
 <pre><code>import pandas as pd
+import openpyxl #necessario per l'export in xlsx
 df1 = pd.read_excel('input.xlsx') #assumiamo il primo file si chiami input.xlsx
 df2 = pd.read_excel('input2.xlsx') #assumiamo il primo file si chiami input2.xlsx
 df = pd.merge(df1, df2, on = &quot;Col1&quot;, how = 'inner') #si crea un nuovo df dove vengono mantenute solo le righe in cui c'è corrispondenza tra &quot;Col1&quot; nel df1 e &quot;Col1&quot; del df2

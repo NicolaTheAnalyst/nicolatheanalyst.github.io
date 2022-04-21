@@ -25,7 +25,7 @@ The solution(s). Turn off google discover in the settings. As already written he
       
       <guid>https://flyingwonton.github.io/post/inner-join/</guid>
       <description>Assumendo di avere due file con entrambi una colonna &amp;ldquo;Col1&amp;rdquo; da voler confrontare, con 5 (cinque) righe in python possiamo risparmiarci qualche improperio su Excel.
-import pandas as pddf1 = pd.read_excel(&#39;input.xlsx&#39;) #assumiamo il primo file si chiami input.xlsxdf2 = pd.read_excel(&#39;input2.xlsx&#39;) #assumiamo il primo file si chiami input2.xlsxdf = pd.merge(df1, df2, on = &amp;quot;Col1&amp;quot;, how = &#39;inner&#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&#39;è corrispondenza tra &amp;quot;Col1&amp;quot; nel df1 e &amp;quot;Col1&amp;quot; del df2df.</description>
+import pandas as pdimport openpyxl #necessario per l&#39;export in xlsxdf1 = pd.read_excel(&#39;input.xlsx&#39;) #assumiamo il primo file si chiami input.xlsxdf2 = pd.read_excel(&#39;input2.xlsx&#39;) #assumiamo il primo file si chiami input2.xlsxdf = pd.merge(df1, df2, on = &amp;quot;Col1&amp;quot;, how = &#39;inner&#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&#39;è corrispondenza tra &amp;quot;Col1&amp;quot; nel df1 e &amp;quot;Col1&amp;quot; del df2df.</description>
     </item>
     
     <item>
