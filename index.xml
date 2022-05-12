@@ -6,7 +6,19 @@
     <description>Recent content on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gestire spazi nei path in Python</title>
+      <link>https://flyingwonton.github.io/post/python-spazi-e-path/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://flyingwonton.github.io/post/python-spazi-e-path/</guid>
+      <description>Lavorare con dei file può essere problematico: talvolta anche solo arrivarci.
+Issue: In Python, in particolare con il metodo os.system(), avere degli spazi nel percorso della cartella\file non viene preso simpaticamente. Dopo aver penato un po&#39;, ho trovato le seguenti soluzioni che riporto di seguito ad imperitura memoria.
+Soluzioni: Apici: Inserendo semplicemente degli apici (&#39;) alle estremità della stringa
+import os username = os.getlogin() path = r&amp;#39;&amp;#34;C:\Users\{}\Desktop\file con spazi.txt&amp;#34;&amp;#39;.format(username) os.system(path) Con il carattere ^: Con il metodo replace() per le stringhe sostituisco gli spazi con &amp;ldquo;^ &amp;quot;</description>
+    </item>
+    
     <item>
       <title>Testo placeholder per word</title>
       <link>https://flyingwonton.github.io/post/word-placeholder-text/</link>
