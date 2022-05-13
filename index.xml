@@ -37,7 +37,7 @@ Alternativamente la funziona lorem permette di generare il classico lorem ipsum 
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://flyingwonton.github.io/post/remove-google-discover/</guid>
-      <description>The issue. Google discover is the feed curated by Google to deliver articles and videos on (mostly) android smarpthones: it&amp;rsquo;s often enabled by default and put on the phone home screen. As if this wasn&amp;rsquo;t annoying enough, sometimes it cannot be disabled in the Google App settings and need to be turned off via terminal.
+      <description>The issue. Google discover is the feed curated by Google to deliver articles and videos on (mostly) android smartphones: it&amp;rsquo;s often enabled by default and put on the phone home screen. As if this wasn&amp;rsquo;t annoying enough, sometimes it cannot be disabled in the Google App settings and need to be turned off via terminal.
 The solution(s). Turn off google discover in the settings. As already written here:
  In the Google App At the top right, tap your Profile picture or initial Settings General Turn off Discover  If the option is available this should do the trick.</description>
     </item>
