@@ -6,7 +6,17 @@
     <description>Recent content on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So I heard you like Vim</title>
+      <link>https://flyingwonton.github.io/post/vim-commands/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://flyingwonton.github.io/post/vim-commands/</guid>
+      <description>Below a table of the most basic (and likely common) Vim usage.
+   Command Description     vim filename opens the file   i insert mode   ESC command mode   :w write (save)   :wq write (save) and quit   :q quit - with unsaved changes, you will be asked whether to save before quitting   :q! quit and throw away unsaved changes   u undo last action    </description>
+    </item>
+    
     <item>
       <title>Gestire spazi nei path in Python</title>
       <link>https://flyingwonton.github.io/post/python-spazi-e-path/</link>
