@@ -14,7 +14,7 @@
       
       <guid>https://flyingwonton.github.io/post/vim-commands/</guid>
       <description>Below a table of the most basic (and likely common) Vim usage.
-   Command Description     vim filename opens the file   i insert mode   ESC command mode   :w write (save)   :wq write (save) and quit   :q quit - with unsaved changes, you will be asked whether to save before quitting   :q! quit and throw away unsaved changes   u undo last action    </description>
+   Command Description     vim filename opens the file   i insert mode   ESC key press ESC button to enter command mode   :w write (save)   :wq write (save) and quit   :q quit - with unsaved changes, you will be asked whether to save before quitting   :q!</description>
     </item>
     
     <item>
