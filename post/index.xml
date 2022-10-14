@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas ExcelWriter Save method</title>
+      <link>https://flyingwonton.github.io/post/pandas-save/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://flyingwonton.github.io/post/pandas-save/</guid>
+      <description>Long story short, Pandas ExcelWriter Save method got deprecated with version 1.5 released last september (19/09/22, to be precise) (here the changes about ExcelWriter).
+The issue Being depecrated, the save method now raises a FutureWarning when accessed:
+ FutureWarning: save is not part of the public API, usage can give in unexpected results and will be removed in a future version; pandas.ExcelWriter.save() is deprecated
+ and it will be removed in a future version :(</description>
+    </item>
+    
     <item>
       <title>So I heard you like Vim</title>
       <link>https://flyingwonton.github.io/post/vim-commands/</link>
