@@ -7,28 +7,28 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Lavorare con dei file può essere problematico: talvolta anche solo arrivarci.
-Issue: In Python, in particolare con il metodo os.system(), avere degli spazi nel percorso della cartella\file non viene preso simpaticamente. Dopo aver penato un po&#39;, ho trovato le seguenti soluzioni che riporto ad imperitura memoria.
-Soluzioni: Apici: Inserendo semplicemente degli apici (&#39;) alle estremità della stringa
+Issue: In Python, in particolare con il metodo os.system(), avere degli spazi nel percorso della cartella\file non viene preso simpaticamente. Dopo aver penato un po&amp;rsquo;, ho trovato le seguenti soluzioni che riporto ad imperitura memoria.
+Soluzioni: Apici: Inserendo semplicemente degli apici (&amp;rsquo;) alle estremità della stringa
 import os username = os.getlogin() path = r&amp;#39;&amp;#34;C:\Users\{}\Desktop\file con spazi.txt&amp;#34;&amp;#39;.format(username) os.system(path) Con il carattere ^: Con il metodo replace() per le stringhe sostituisco gli spazi con &amp;ldquo;^ &amp;quot;" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://flyingwonton.github.io/post/python-spazi-e-path/" />
+<link rel="canonical" href="https://nicolatheanalyst.github.io/post/python-spazi-e-path/" />
 
 
 
 
-<link rel="stylesheet" href="https://flyingwonton.github.io/assets/style.css">
+<link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/style.css">
 
-  <link rel="stylesheet" href="https://flyingwonton.github.io/assets/green.css">
-
-
+  <link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/green.css">
 
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://flyingwonton.github.io/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="https://flyingwonton.github.io/img/favicon/green.png">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nicolatheanalyst.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nicolatheanalyst.github.io/img/favicon/green.png">
 
 
 
@@ -45,11 +45,11 @@ import os username = os.getlogin() path = r&amp;#39;&amp;#34;C:\Users\{}\Desktop
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Gestire spazi nei path in Python :: Love letters to my future self">
 <meta property="og:description" content="Due soluzioni pratiche" />
-<meta property="og:url" content="https://flyingwonton.github.io/post/python-spazi-e-path/" />
+<meta property="og:url" content="https://nicolatheanalyst.github.io/post/python-spazi-e-path/" />
 <meta property="og:site_name" content="Gestire spazi nei path in Python" />
 
   
-    <meta property="og:image" content="https://flyingwonton.github.io/img/favicon/green.png">
+    <meta property="og:image" content="https://nicolatheanalyst.github.io/img/favicon/green.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -120,7 +120,7 @@ import os username = os.getlogin() path = r&amp;#39;&amp;#34;C:\Users\{}\Desktop
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://flyingwonton.github.io/post/python-spazi-e-path/">Gestire spazi nei path in Python</a></h1>
+    <a href="https://nicolatheanalyst.github.io/post/python-spazi-e-path/">Gestire spazi nei path in Python</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -139,22 +139,22 @@ import os username = os.getlogin() path = r&amp;#39;&amp;#34;C:\Users\{}\Desktop
   <div class="post-content"><div>
         <p>Lavorare con dei file può essere problematico: talvolta anche solo <em>arrivarci</em>.</p>
 <h2 id="issue">Issue:<a href="#issue" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>In Python, in particolare con il metodo os.system(), avere degli spazi nel percorso della cartella\file non viene preso simpaticamente. Dopo aver penato un po', ho trovato le seguenti soluzioni che riporto ad imperitura memoria.</p>
+<p>In Python, in particolare con il metodo os.system(), avere degli spazi nel percorso della cartella\file non viene preso simpaticamente. Dopo aver penato un po&rsquo;, ho trovato le seguenti soluzioni che riporto ad imperitura memoria.</p>
 <h2 id="soluzioni">Soluzioni:<a href="#soluzioni" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <h3 id="apici">Apici:<a href="#apici" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<p>Inserendo semplicemente degli apici (') alle estremità della stringa</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
-username <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin()
-path <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;&#34;C:\Users\{}\Desktop\file con spazi.txt&#34;&#39;</span><span style="color:#f92672">.</span>format(username)
-os<span style="color:#f92672">.</span>system(path)
-</code></pre></div><h3 id="con-il-carattere-">Con il carattere ^:<a href="#con-il-carattere-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Inserendo semplicemente degli apici (&rsquo;) alle estremità della stringa</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin()
+</span></span><span style="display:flex;"><span>path <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;&#34;C:\Users\</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">\Desktop\file con spazi.txt&#34;&#39;</span><span style="color:#f92672">.</span>format(username)
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>system(path)
+</span></span></code></pre></div><h3 id="con-il-carattere-">Con il carattere ^:<a href="#con-il-carattere-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <p>Con il metodo replace() per le stringhe sostituisco gli spazi con &ldquo;^ &quot;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
-username <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin()
-path <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;C:\Users\{}\Desktop\file con spazi.txt&#34;</span><span style="color:#f92672">.</span>format(username)
-n <span style="color:#f92672">=</span> path<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;^ &#39;</span>)
-os<span style="color:#f92672">.</span>system(n)
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin()
+</span></span><span style="display:flex;"><span>path <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;C:\Users\</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">\Desktop\file con spazi.txt&#34;</span><span style="color:#f92672">.</span>format(username)
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> path<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;^ &#39;</span>)
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>system(n)
+</span></span></code></pre></div>
       </div></div>
 
   
@@ -167,7 +167,7 @@ os<span style="color:#f92672">.</span>system(n)
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="https://flyingwonton.github.io/post/vim-commands/">
+            <a href="https://nicolatheanalyst.github.io/post/vim-commands/">
                 <span class="button__icon">←</span>
                 <span class="button__text">So I heard you like Vim</span>
             </a>
@@ -175,7 +175,7 @@ os<span style="color:#f92672">.</span>system(n)
         
         
         <span class="button next">
-            <a href="https://flyingwonton.github.io/post/word-placeholder-text/">
+            <a href="https://nicolatheanalyst.github.io/post/word-placeholder-text/">
                 <span class="button__text">Testo placeholder per word</span>
                 <span class="button__icon">→</span>
             </a>
@@ -195,12 +195,12 @@ os<span style="color:#f92672">.</span>system(n)
   
     <footer class="footer">
 <div style="width:100%; text-align:center;">
-  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2022 Powered by <a href="http://gohugo.io">Hugo</a></div>
+  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2023 Powered by <a href="http://gohugo.io">Hugo</a></div>
 </div>
 </footer>
 
-<script src="https://flyingwonton.github.io/assets/main.js"></script>
-<script src="https://flyingwonton.github.io/assets/prism.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/main.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/prism.js"></script>
 
 
 

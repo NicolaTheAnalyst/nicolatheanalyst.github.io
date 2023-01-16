@@ -8,26 +8,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Questo sito è basato su Hugo, generatore di siti statici scritto in Go. Hugo crea siti veloci e relativamente semplici da far girare. L&amp;rsquo;inghippo sta nel relativamente.
 Gli assunti da cui parto sono i seguenti:
- Hugo è stato installato. Diversamente, si faccia riferimento qui. Il setup di Hugo e la configurzione del tema è stato completato e testato in locale.  Deploy su GitHub Pages A questo punto, l&amp;rsquo;unica cosa che manca è deployare Hugo." />
+Hugo è stato installato. Diversamente, si faccia riferimento qui. Il setup di Hugo e la configurzione del tema è stato completato e testato in locale. Deploy su GitHub Pages A questo punto, l&amp;rsquo;unica cosa che manca è deployare Hugo." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://flyingwonton.github.io/post/hello/" />
+<link rel="canonical" href="https://nicolatheanalyst.github.io/post/hello/" />
 
 
 
 
-<link rel="stylesheet" href="https://flyingwonton.github.io/assets/style.css">
+<link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/style.css">
 
-  <link rel="stylesheet" href="https://flyingwonton.github.io/assets/green.css">
-
-
+  <link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/green.css">
 
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://flyingwonton.github.io/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="https://flyingwonton.github.io/img/favicon/green.png">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nicolatheanalyst.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nicolatheanalyst.github.io/img/favicon/green.png">
 
 
 
@@ -44,11 +44,11 @@ Gli assunti da cui parto sono i seguenti:
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Deployare Hugo su GitHub pages :: Love letters to my future self">
 <meta property="og:description" content="Il primo post di questo blog? Come deployarlo." />
-<meta property="og:url" content="https://flyingwonton.github.io/post/hello/" />
+<meta property="og:url" content="https://nicolatheanalyst.github.io/post/hello/" />
 <meta property="og:site_name" content="Deployare Hugo su GitHub pages" />
 
   
-    <meta property="og:image" content="https://flyingwonton.github.io/img/favicon/green.png">
+    <meta property="og:image" content="https://nicolatheanalyst.github.io/img/favicon/green.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -119,7 +119,7 @@ Gli assunti da cui parto sono i seguenti:
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://flyingwonton.github.io/post/hello/">Deployare Hugo su GitHub pages</a></h1>
+    <a href="https://nicolatheanalyst.github.io/post/hello/">Deployare Hugo su GitHub pages</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -150,26 +150,26 @@ Gli assunti da cui parto sono i seguenti:
 <li>Un&rsquo;altra dove salvare i file html generati da Hugo e che andranno effettivamente a costituire il materiale per il sito, chiamata <em>&lt;usarname_Github&gt;.github.io</em> - sostituito, va da sé, con l&rsquo;effettivo username di GitHub. Quest&rsquo;ultima deve essere <strong>necessariamente</strong> una repository pubblica per funzionare con la versione free.</li>
 </ul>
 <p>In primo luogo, sincronizziamo le repository e aggiungiamo la cartella <em>&lt;usarname_Github&gt;.github.io</em> come submodule.</p>
-<pre><code>git remote add origin git@github.com:&lt;usarname_Github&gt;/hugosite.git
+<pre tabindex="0"><code>git remote add origin git@github.com:&lt;usarname_Github&gt;/hugosite.git
 git add .
-git commit -m &quot;Initial commit for our Hugo site.&quot;
+git commit -m &#34;Initial commit for our Hugo site.&#34;
 git submodule add git@github.com:&lt;usarname_Github&gt;/&lt;usarname_Github.github.io.git
 git add .
-git commit -m &quot;Initial commit for our generated HTML.&quot;
+git commit -m &#34;Initial commit for our generated HTML.&#34;
 git push -u origin master
 </code></pre><p>Fatto questo, abbiamo sincronizzato la repo con i file di Hugo. Devono però essere ancora generati i file HTML che saranno la base vera e propria del sito. Prima di generarli e di <em>pusharli</em> nella nostra repository <em>&lt;usarname_Github&gt;.github.io</em> dev&rsquo;essere ritoccata la configurazione di Hugo. Nel file config.toml dovranno essere specificati due parametri: <strong>baseurl</strong> e <strong>publishDir</strong>. Segue un esempio di configurazione con il tema <em>Terminal</em></p>
-<pre><code>baseurl = &quot;https://&lt;usarname_Github&gt;.github.io/&quot;
-languageCode = &quot;en-us&quot;
-theme = &quot;terminal&quot;
+<pre tabindex="0"><code>baseurl = &#34;https://&lt;usarname_Github&gt;.github.io/&#34;
+languageCode = &#34;en-us&#34;
+theme = &#34;terminal&#34;
 paginate = 5
-publishDir = &quot;&lt;usarname_Github&gt;.github.io&quot;
-</code></pre><p>PublishDir in particolare dice a Hugo la cartella dove generare i file HTML che di default verrebbero generati in <em>public</em>. A questo punto l&rsquo;unica cosa che rimane da fare è produrre i file HTML. 
+publishDir = &#34;&lt;usarname_Github&gt;.github.io&#34;
+</code></pre><p>PublishDir in particolare dice a Hugo la cartella dove generare i file HTML che di default verrebbero generati in <em>public</em>. A questo punto l&rsquo;unica cosa che rimane da fare è produrre i file HTML.
 Dalla cartella principale con i file e la configurazione del sito, è sufficiente dare il comando</p>
-<pre><code>Hugo
+<pre tabindex="0"><code>Hugo
 </code></pre><p>Se tutto è andato per il meglio, nella cartella <em>&lt;usarname_Github&gt;.github.io</em> dovrebbero essere magicamente comparsi i file HTML e CSS generati. Ora sarà sufficiente sincronizzare la repository dedicata:</p>
-<pre><code>cd &lt;usarname_Github&gt;.github.io
+<pre tabindex="0"><code>cd &lt;usarname_Github&gt;.github.io
 git add .
-git commit -m &quot;Commit del sito&quot;
+git commit -m &#34;Commit del sito&#34;
 git push origin master
 </code></pre><h2 id="test">Test<a href="#test" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Se -ancora una volta- tutto è andato per il meglio, andando su www.&lt;usarname_Github&gt;.github.io, dovrebbe comparire il nostro sito pari pari a come appariva in locale. Potrebbe volerci qualche minuto.</p>
@@ -188,7 +188,7 @@ git push origin master
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="https://flyingwonton.github.io/post/read-more/">
+            <a href="https://nicolatheanalyst.github.io/post/read-more/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Read more?</span>
             </a>
@@ -209,12 +209,12 @@ git push origin master
   
     <footer class="footer">
 <div style="width:100%; text-align:center;">
-  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2022 Powered by <a href="http://gohugo.io">Hugo</a></div>
+  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2023 Powered by <a href="http://gohugo.io">Hugo</a></div>
 </div>
 </footer>
 
-<script src="https://flyingwonton.github.io/assets/main.js"></script>
-<script src="https://flyingwonton.github.io/assets/prism.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/main.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/prism.js"></script>
 
 
 

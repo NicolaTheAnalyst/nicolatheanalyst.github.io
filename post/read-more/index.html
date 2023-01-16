@@ -10,23 +10,23 @@
 Come personalizzare il read more in Hugo È una cosa estremamente banale ma non avendola trovata altrove la segno di seguito. Di default, Hugo prende dal file di configurazione config.toml la stringa da apporre. Segue un estratto del file, si faccia riferimento al parametro &amp;ldquo;readMore&amp;rdquo;." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://flyingwonton.github.io/post/read-more/" />
+<link rel="canonical" href="https://nicolatheanalyst.github.io/post/read-more/" />
 
 
 
 
-<link rel="stylesheet" href="https://flyingwonton.github.io/assets/style.css">
+<link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/style.css">
 
-  <link rel="stylesheet" href="https://flyingwonton.github.io/assets/green.css">
-
-
+  <link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/green.css">
 
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://flyingwonton.github.io/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="https://flyingwonton.github.io/img/favicon/green.png">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nicolatheanalyst.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nicolatheanalyst.github.io/img/favicon/green.png">
 
 
 
@@ -43,11 +43,11 @@ Come personalizzare il read more in Hugo È una cosa estremamente banale ma non 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Read more? :: Love letters to my future self">
 <meta property="og:description" content="Customizzare il read more in Hugo" />
-<meta property="og:url" content="https://flyingwonton.github.io/post/read-more/" />
+<meta property="og:url" content="https://nicolatheanalyst.github.io/post/read-more/" />
 <meta property="og:site_name" content="Read more?" />
 
   
-    <meta property="og:image" content="https://flyingwonton.github.io/img/favicon/green.png">
+    <meta property="og:image" content="https://nicolatheanalyst.github.io/img/favicon/green.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -118,7 +118,7 @@ Come personalizzare il read more in Hugo È una cosa estremamente banale ma non 
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://flyingwonton.github.io/post/read-more/">Read more?</a></h1>
+    <a href="https://nicolatheanalyst.github.io/post/read-more/">Read more?</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -139,24 +139,24 @@ Come personalizzare il read more in Hugo È una cosa estremamente banale ma non 
 <h2 id="come-personalizzare-il-_read-more_-in-hugo">Come personalizzare il <em>read more</em> in Hugo<a href="#come-personalizzare-il-_read-more_-in-hugo" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>È una cosa estremamente banale ma non avendola trovata altrove la segno di seguito.
 Di default, Hugo prende dal file di configurazione <strong>config.toml</strong> la stringa da apporre. Segue un estratto del file, si faccia riferimento al parametro &ldquo;readMore&rdquo;.</p>
-<pre><code>copyright = &quot;&quot;
-menuMore = &quot;Show more&quot;
-readMore = &quot;Read more&quot;
-readOtherPosts = &quot;Read other posts&quot;
-missingContentMessage = &quot;Page not found...&quot;
-missingBackButtonLabel = &quot;Back to home page&quot;
+<pre tabindex="0"><code>copyright = &#34;&#34;
+menuMore = &#34;Show more&#34;
+readMore = &#34;Read more&#34;
+readOtherPosts = &#34;Read other posts&#34;
+missingContentMessage = &#34;Page not found...&#34;
+missingBackButtonLabel = &#34;Back to home page&#34;
 </code></pre><p>Sicché, se l&rsquo;obiettivo è semplicemente cambiare il testo, sarà sufficiente modificare quanto all&rsquo;interno delle virgolette del parametro &ldquo;readMore&rdquo;. Tuttavia per variazioni un attimo più complesse, sarà necessario agire direttamente su <strong>index.html</strong>, situato generalmente in \layouts\_default\.</p>
 <p>Di default, cercando il <em>read-more button</em> all&rsquo;interno di index.html troveremo</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">        &lt;<span style="color:#f92672">div</span>&gt;
-          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;read-more button&#34;</span>
-           <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.RelPermalink}}&#34;</span>&gt;{{ $.Site.Params.ReadMore }} →/a&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><p><strong>{{ $.Site.Params.ReadMore }}</strong> attinge al parametro readMore settato su config.toml. Ovvero, così com&rsquo;è, il post visualizzerà il testo che avremo dato in pasto a readMore. Se vogliamo che visualizzi qualcosa di diverso, sarà necessario, molto banalmente, agire su quella riga. Segue un esempio di modifica (che poi, nel momento in cui scrivo, è quello che utilizzo su questo blog).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">        &lt;<span style="color:#f92672">div</span>&gt;
-          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;read-more button&#34;</span>
-            <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.RelPermalink}}&#34;</span>&gt;cat &#34;~/posts/{{ .Title }}.md&#34; →&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><p>Giusto per amor di chiarezza, <strong>{{.RelPermalink}}</strong> è una variabile che restituisce il link al post e non va toccata mentre <strong>{{ .Title }}</strong> restituisce semplicemente il titolo del post.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;read-more button&#34;</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.RelPermalink}}&#34;</span>&gt;{{ $.Site.Params.ReadMore }} →/a&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p><strong>{{ $.Site.Params.ReadMore }}</strong> attinge al parametro readMore settato su config.toml. Ovvero, così com&rsquo;è, il post visualizzerà il testo che avremo dato in pasto a readMore. Se vogliamo che visualizzi qualcosa di diverso, sarà necessario, molto banalmente, agire su quella riga. Segue un esempio di modifica (che poi, nel momento in cui scrivo, è quello che utilizzo su questo blog).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;read-more button&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.RelPermalink}}&#34;</span>&gt;cat &#34;~/posts/{{ .Title }}.md&#34; →&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>Giusto per amor di chiarezza, <strong>{{.RelPermalink}}</strong> è una variabile che restituisce il link al post e non va toccata mentre <strong>{{ .Title }}</strong> restituisce semplicemente il titolo del post.</p>
 
       </div></div>
 
@@ -170,7 +170,7 @@ missingBackButtonLabel = &quot;Back to home page&quot;
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="https://flyingwonton.github.io/post/concatenate/">
+            <a href="https://nicolatheanalyst.github.io/post/concatenate/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Concatenazione di celle verticali su Excel</span>
             </a>
@@ -178,7 +178,7 @@ missingBackButtonLabel = &quot;Back to home page&quot;
         
         
         <span class="button next">
-            <a href="https://flyingwonton.github.io/post/hello/">
+            <a href="https://nicolatheanalyst.github.io/post/hello/">
                 <span class="button__text">Deployare Hugo su GitHub pages</span>
                 <span class="button__icon">→</span>
             </a>
@@ -198,12 +198,12 @@ missingBackButtonLabel = &quot;Back to home page&quot;
   
     <footer class="footer">
 <div style="width:100%; text-align:center;">
-  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2022 Powered by <a href="http://gohugo.io">Hugo</a></div>
+  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2023 Powered by <a href="http://gohugo.io">Hugo</a></div>
 </div>
 </footer>
 
-<script src="https://flyingwonton.github.io/assets/main.js"></script>
-<script src="https://flyingwonton.github.io/assets/prism.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/main.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/prism.js"></script>
 
 
 

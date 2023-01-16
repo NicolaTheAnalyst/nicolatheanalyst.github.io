@@ -7,26 +7,26 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Assumendo di avere due file con entrambi una colonna &amp;ldquo;Col1&amp;rdquo; da voler confrontare, con 5 (cinque) righe in python possiamo risparmiarci qualche improperio su Excel.
-import pandas as pdimport openpyxl #necessario per l&#39;export in xlsxdf1 = pd.read_excel(&#39;input.xlsx&#39;) #assumiamo il primo file si chiami input.xlsxdf2 = pd.read_excel(&#39;input2.xlsx&#39;) #assumiamo il primo file si chiami input2.xlsxdf = pd.merge(df1, df2, on = &amp;quot;Col1&amp;quot;, how = &#39;inner&#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&#39;è corrispondenza tra &amp;quot;Col1&amp;quot; nel df1 e &amp;quot;Col1&amp;quot; del df2df." />
+import pandas as pdimport openpyxl #necessario per l&amp;#39;export in xlsxdf1 = pd.read_excel(&amp;#39;input.xlsx&amp;#39;) #assumiamo il primo file si chiami input.xlsxdf2 = pd.read_excel(&amp;#39;input2.xlsx&amp;#39;) #assumiamo il primo file si chiami input2.xlsxdf = pd.merge(df1, df2, on = &amp;#34;Col1&amp;#34;, how = &amp;#39;inner&amp;#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&amp;#39;è corrispondenza tra &amp;#34;Col1&amp;#34; nel df1 e &amp;#34;Col1&amp;#34; del df2df." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://flyingwonton.github.io/post/inner-join/" />
+<link rel="canonical" href="https://nicolatheanalyst.github.io/post/inner-join/" />
 
 
 
 
-<link rel="stylesheet" href="https://flyingwonton.github.io/assets/style.css">
+<link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/style.css">
 
-  <link rel="stylesheet" href="https://flyingwonton.github.io/assets/green.css">
-
-
+  <link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/green.css">
 
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://flyingwonton.github.io/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="https://flyingwonton.github.io/img/favicon/green.png">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nicolatheanalyst.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nicolatheanalyst.github.io/img/favicon/green.png">
 
 
 
@@ -42,12 +42,12 @@ import pandas as pdimport openpyxl #necessario per l&#39;export in xlsxdf1 = p
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Inner join con pandas :: Love letters to my future self">
-<meta property="og:description" content="Perché Python  Excel" />
-<meta property="og:url" content="https://flyingwonton.github.io/post/inner-join/" />
+<meta property="og:description" content="Perché Python &gt; Excel" />
+<meta property="og:url" content="https://nicolatheanalyst.github.io/post/inner-join/" />
 <meta property="og:site_name" content="Inner join con pandas" />
 
   
-    <meta property="og:image" content="https://flyingwonton.github.io/img/favicon/green.png">
+    <meta property="og:image" content="https://nicolatheanalyst.github.io/img/favicon/green.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -118,7 +118,7 @@ import pandas as pdimport openpyxl #necessario per l&#39;export in xlsxdf1 = p
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://flyingwonton.github.io/post/inner-join/">Inner join con pandas</a></h1>
+    <a href="https://nicolatheanalyst.github.io/post/inner-join/">Inner join con pandas</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -136,12 +136,12 @@ import pandas as pdimport openpyxl #necessario per l&#39;export in xlsxdf1 = p
 
   <div class="post-content"><div>
         <p>Assumendo di avere due file con entrambi una colonna &ldquo;Col1&rdquo; da voler confrontare, con 5 (cinque) righe in python possiamo risparmiarci qualche improperio su Excel.</p>
-<pre><code>import pandas as pd
-import openpyxl #necessario per l'export in xlsx
-df1 = pd.read_excel('input.xlsx') #assumiamo il primo file si chiami input.xlsx
-df2 = pd.read_excel('input2.xlsx') #assumiamo il primo file si chiami input2.xlsx
-df = pd.merge(df1, df2, on = &quot;Col1&quot;, how = 'inner') #si crea un nuovo df dove vengono mantenute solo le righe in cui c'è corrispondenza tra &quot;Col1&quot; nel df1 e &quot;Col1&quot; del df2
-df.to_excel(&quot;output.xlsx&quot;) #esporta il dataframe come output.xlsx
+<pre tabindex="0"><code>import pandas as pd
+import openpyxl #necessario per l&#39;export in xlsx
+df1 = pd.read_excel(&#39;input.xlsx&#39;) #assumiamo il primo file si chiami input.xlsx
+df2 = pd.read_excel(&#39;input2.xlsx&#39;) #assumiamo il primo file si chiami input2.xlsx
+df = pd.merge(df1, df2, on = &#34;Col1&#34;, how = &#39;inner&#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&#39;è corrispondenza tra &#34;Col1&#34; nel df1 e &#34;Col1&#34; del df2
+df.to_excel(&#34;output.xlsx&#34;) #esporta il dataframe come output.xlsx
 </code></pre><p>Unico accorgimento: su output.xlsx potrebbe essere necessario eliminare l&rsquo;indice creato da pandas. Inoltre, se i file su cui si sta lavorando sono estrazioni da Dynamics 365 da reimportare sarà un lavoro del tutto inutile in virtù del fatto che al momento della reimportazione il CRM non ne vorrà sapere. Nondimeno, per tutti gli altri casi d&rsquo;uso funziona perfettamente.</p>
 
       </div></div>
@@ -156,7 +156,7 @@ df.to_excel(&quot;output.xlsx&quot;) #esporta il dataframe come output.xlsx
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="https://flyingwonton.github.io/post/remove-google-discover/">
+            <a href="https://nicolatheanalyst.github.io/post/remove-google-discover/">
                 <span class="button__icon">←</span>
                 <span class="button__text">How to remove Google discover \\ google feed from home screen</span>
             </a>
@@ -164,7 +164,7 @@ df.to_excel(&quot;output.xlsx&quot;) #esporta il dataframe come output.xlsx
         
         
         <span class="button next">
-            <a href="https://flyingwonton.github.io/post/keep-running-ssh/">
+            <a href="https://nicolatheanalyst.github.io/post/keep-running-ssh/">
                 <span class="button__text">Come lasciare uno script avviato da remoto</span>
                 <span class="button__icon">→</span>
             </a>
@@ -184,12 +184,12 @@ df.to_excel(&quot;output.xlsx&quot;) #esporta il dataframe come output.xlsx
   
     <footer class="footer">
 <div style="width:100%; text-align:center;">
-  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2022 Powered by <a href="http://gohugo.io">Hugo</a></div>
+  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2023 Powered by <a href="http://gohugo.io">Hugo</a></div>
 </div>
 </footer>
 
-<script src="https://flyingwonton.github.io/assets/main.js"></script>
-<script src="https://flyingwonton.github.io/assets/prism.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/main.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/prism.js"></script>
 
 
 
