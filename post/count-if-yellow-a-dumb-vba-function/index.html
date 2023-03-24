@@ -11,23 +11,23 @@ It&amp;rsquo;s not a big deal, just a few lines in VBA that, since it&amp;rsquo;
 Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the cell range you are applying this to Dim yellow As Integer Dim TotalCount As Integer yellow = 6 &amp;#39;6 is the color index number of the particular yellow I was using, hardcoding is not cool, I know Set rCell = CountRange &amp;#39;for every cell of the select range, increment 1 if yellow For Each rCell In CountRange If rCell." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://flyingwonton.github.io/post/count-if-yellow-a-dumb-vba-function/" />
+<link rel="canonical" href="https://nicolatheanalyst.github.io/post/count-if-yellow-a-dumb-vba-function/" />
 
 
 
 
-<link rel="stylesheet" href="https://flyingwonton.github.io/assets/style.css">
+<link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/style.css">
 
-  <link rel="stylesheet" href="https://flyingwonton.github.io/assets/green.css">
-
-
+  <link rel="stylesheet" href="https://nicolatheanalyst.github.io/assets/green.css">
 
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://flyingwonton.github.io/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="https://flyingwonton.github.io/img/favicon/green.png">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nicolatheanalyst.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nicolatheanalyst.github.io/img/favicon/green.png">
 
 
 
@@ -44,11 +44,11 @@ Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the c
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Count if yellow: a dumb yet useful vba function :: Love letters to my future self">
 <meta property="og:description" content="&#39;cause it should be a standard function but it is what it is" />
-<meta property="og:url" content="https://flyingwonton.github.io/post/count-if-yellow-a-dumb-vba-function/" />
+<meta property="og:url" content="https://nicolatheanalyst.github.io/post/count-if-yellow-a-dumb-vba-function/" />
 <meta property="og:site_name" content="Count if yellow: a dumb yet useful vba function" />
 
   
-    <meta property="og:image" content="https://flyingwonton.github.io/img/favicon/green.png">
+    <meta property="og:image" content="https://nicolatheanalyst.github.io/img/favicon/green.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -119,7 +119,7 @@ Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the c
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://flyingwonton.github.io/post/count-if-yellow-a-dumb-vba-function/">Count if yellow: a dumb yet useful vba function</a></h1>
+    <a href="https://nicolatheanalyst.github.io/post/count-if-yellow-a-dumb-vba-function/">Count if yellow: a dumb yet useful vba function</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -156,7 +156,7 @@ Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the c
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vb" data-lang="vb"><span style="display:flex;"><span><span style="color:#66d9ef">Function</span> <span style="color:#a6e22e">GETCOLORINDEX</span>(cell <span style="color:#f92672">As</span> Range)
 </span></span><span style="display:flex;"><span>GETCOLORINDEX <span style="color:#f92672">=</span> cell.Interior.ColorIndex
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">End</span> <span style="color:#66d9ef">Function</span>
-</span></span></code></pre></div><p>Just select the coloured cell you need to pick the colour index from and you&rsquo;ll get the corresponding integer.</p>
+</span></span></code></pre></div><p>Just select the coloured cell you need to pick the colour index from, and you&rsquo;ll get the corresponding integer.</p>
 <p>Now, yes, <strong>hardcoding values is bad practice</strong>. Even in Excel, I guess. So to make the colour index dynamic, you can get add another argument to the first function:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vb" data-lang="vb"><span style="display:flex;"><span><span style="color:#66d9ef">Function</span> <span style="color:#a6e22e">COUNTIFYELLOW</span>(CountRange <span style="color:#f92672">As</span> Range, ColourRange <span style="color:#f92672">As</span> Range)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">Dim</span> colour <span style="color:#f92672">As</span> <span style="color:#66d9ef">Integer</span>
@@ -208,7 +208,7 @@ Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the c
         
         
         <span class="button next">
-            <a href="https://flyingwonton.github.io/post/pandas-save/">
+            <a href="https://nicolatheanalyst.github.io/post/pandas-save/">
                 <span class="button__text">Pandas ExcelWriter Save method</span>
                 <span class="button__icon">→</span>
             </a>
@@ -232,8 +232,8 @@ Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the c
 </div>
 </footer>
 
-<script src="https://flyingwonton.github.io/assets/main.js"></script>
-<script src="https://flyingwonton.github.io/assets/prism.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/main.js"></script>
+<script src="https://nicolatheanalyst.github.io/assets/prism.js"></script>
 
 
 
