@@ -8,7 +8,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="L&amp;rsquo;esigenza è particolarmente banale ma visto che mi ci sono imbattuto più di qualche volta, vale la pena segnarsela.
 Come concatenare celle verticali su Excel La situazione di partenza è la seguente:
-             elemento1       elemento2       elemento3       Per ottenere, ad esempio:" />
+elemento1 elemento2 elemento3 Per ottenere, ad esempio:
+elemento1;elemento2;elemento3; È sufficiente, iniziare una formula e selezionare le celle verticali, aggiungedo il separatore come suffisso &amp;amp;&amp;quot;;&amp;quot;. E.g:
+=B3:B5&amp;amp;&amp;#34;;&amp;#34; Riselezionre la formula e premere F9 per convertire la formula in valori:" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://flyingwonton.github.io/post/concatenate/" />
@@ -174,13 +176,13 @@ Come concatenare celle verticali su Excel La situazione di partenza è la seguen
 </tbody>
 </table>
 <p>Per ottenere, ad esempio:</p>
-<pre><code> elemento1;elemento2;elemento3;
+<pre tabindex="0"><code> elemento1;elemento2;elemento3;
 </code></pre><p>È sufficiente, iniziare una formula e selezionare le celle verticali, aggiungedo il separatore come suffisso <strong>&amp;&quot;;&quot;</strong>. E.g:</p>
-<pre><code>=B3:B5&amp;&quot;;&quot;
+<pre tabindex="0"><code>=B3:B5&amp;&#34;;&#34;
 </code></pre><p>Riselezionre la formula e premere F9 per convertire la formula in valori:</p>
-<pre><code>={&quot;elemento1;&quot;;&quot;elemento2;&quot;;&quot;elemento3;&quot;}
+<pre tabindex="0"><code>={&#34;elemento1;&#34;;&#34;elemento2;&#34;;&#34;elemento3;&#34;}
 </code></pre><p>A questo punto sarà sufficiente eliminare le parentesi graffe e aggiungergi la funzione concatenate aka concatenate</p>
-<pre><code>=CONCATENATE(&quot;elemento1;&quot;;&quot;elemento2;&quot;;&quot;elemento3;&quot;)
+<pre tabindex="0"><code>=CONCATENATE(&#34;elemento1;&#34;;&#34;elemento2;&#34;;&#34;elemento3;&#34;)
 </code></pre>
       </div></div>
 
@@ -222,7 +224,7 @@ Come concatenare celle verticali su Excel La situazione di partenza è la seguen
   
     <footer class="footer">
 <div style="width:100%; text-align:center;">
-  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2022 Powered by <a href="http://gohugo.io">Hugo</a></div>
+  <div style="width: 50%; margin: 0px auto; text-align:center;">© 2023 Powered by <a href="http://gohugo.io">Hugo</a></div>
 </div>
 </footer>
 
