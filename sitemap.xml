@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+<<<<<<< HEAD
     <loc>https://flyingwonton.github.io/post/count-if-yellow-a-dumb-vba-function/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -47,5 +48,49 @@
     <loc>https://flyingwonton.github.io/categories/</loc>
   </url><url>
     <loc>https://flyingwonton.github.io/tags/</loc>
+=======
+    <loc>https://nicolatheanalyst.github.io/</loc>
+    <lastmod>2022-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/pandas-save/</loc>
+    <lastmod>2022-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/</loc>
+    <lastmod>2022-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/vim-commands/</loc>
+    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/python-spazi-e-path/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/word-placeholder-text/</loc>
+    <lastmod>2022-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/remove-google-discover/</loc>
+    <lastmod>2022-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/inner-join/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/keep-running-ssh/</loc>
+    <lastmod>2021-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/concatenate/</loc>
+    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/read-more/</loc>
+    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/about/</loc>
+    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/post/hello/</loc>
+    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/categories/</loc>
+  </url><url>
+    <loc>https://nicolatheanalyst.github.io/tags/</loc>
+>>>>>>> 6665e5d532b94265c4b0f2d09904f69b26c6a18e
   </url>
 </urlset>

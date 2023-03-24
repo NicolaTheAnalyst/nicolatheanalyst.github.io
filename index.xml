@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Love letters to my future self</title>
-    <link>https://flyingwonton.github.io/</link>
+    <link>https://nicolatheanalyst.github.io/</link>
     <description>Recent content on Love letters to my future self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://flyingwonton.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Count if yellow: a dumb yet useful vba function</title>
@@ -18,12 +19,15 @@ It&amp;rsquo;s not a big deal, just a few lines in VBA that, since it&amp;rsquo;
 Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the cell range you are applying this to Dim yellow As Integer Dim TotalCount As Integer yellow = 6 &amp;#39;6 is the color index number of the particular yellow I was using, hardcoding is not cool, I know Set rCell = CountRange &amp;#39;for every cell of the select range, increment 1 if yellow For Each rCell In CountRange If rCell.</description>
     </item>
     
+=======
+    <lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nicolatheanalyst.github.io/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> 6665e5d532b94265c4b0f2d09904f69b26c6a18e
     <item>
       <title>Pandas ExcelWriter Save method</title>
-      <link>https://flyingwonton.github.io/post/pandas-save/</link>
+      <link>https://nicolatheanalyst.github.io/post/pandas-save/</link>
       <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/pandas-save/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/pandas-save/</guid>
       <description>Long story short, Pandas ExcelWriter Save method got deprecated with version 1.5 released last september (19/09/22, to be precise) (here the changes about ExcelWriter).
 The issue Being depecrated, the save method now raises a FutureWarning when accessed:
 FutureWarning: save is not part of the public API, usage can give in unexpected results and will be removed in a future version; pandas.ExcelWriter.save() is deprecated
@@ -32,20 +36,20 @@ and it will be removed in a future version :(</description>
     
     <item>
       <title>So I heard you like Vim</title>
-      <link>https://flyingwonton.github.io/post/vim-commands/</link>
+      <link>https://nicolatheanalyst.github.io/post/vim-commands/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/vim-commands/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/vim-commands/</guid>
       <description>Below a table of the most basic (and likely common) Vim usage.
 Command Description vim filename opens the file i insert mode ESC key press ESC button to enter command mode :w write (save) :wq write (save) and quit :q quit - with unsaved changes, you will be asked whether to save before quitting :q! quit and throw away unsaved changes u undo last action </description>
     </item>
     
     <item>
       <title>Gestire spazi nei path in Python</title>
-      <link>https://flyingwonton.github.io/post/python-spazi-e-path/</link>
+      <link>https://nicolatheanalyst.github.io/post/python-spazi-e-path/</link>
       <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/python-spazi-e-path/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/python-spazi-e-path/</guid>
       <description>Lavorare con dei file può essere problematico: talvolta anche solo arrivarci.
 Issue: In Python, in particolare con il metodo os.system(), avere degli spazi nel percorso della cartella\file non viene preso simpaticamente. Dopo aver penato un po&amp;rsquo;, ho trovato le seguenti soluzioni che riporto ad imperitura memoria.
 Soluzioni: Apici: Inserendo semplicemente degli apici (&amp;rsquo;) alle estremità della stringa
@@ -54,10 +58,10 @@ import os username = os.getlogin() path = r&amp;#39;&amp;#34;C:\Users\{}\Desktop
     
     <item>
       <title>Testo placeholder per word</title>
-      <link>https://flyingwonton.github.io/post/word-placeholder-text/</link>
+      <link>https://nicolatheanalyst.github.io/post/word-placeholder-text/</link>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/word-placeholder-text/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/word-placeholder-text/</guid>
       <description>Per generare su Word del testo come placeholder si può usare la funziona rand eg.
 =rand(3,5) crea 3 paragrafi con 5 righe ciascuna, attingendo da un affascinante (?) testo di Microsoft sulle nuove funzionalità di Office 2007.
 Alternativamente la funziona lorem permette di generare il classico lorem ipsum eg.
@@ -66,10 +70,10 @@ Alternativamente la funziona lorem permette di generare il classico lorem ipsum 
     
     <item>
       <title>How to remove Google discover \\ google feed from home screen</title>
-      <link>https://flyingwonton.github.io/post/remove-google-discover/</link>
+      <link>https://nicolatheanalyst.github.io/post/remove-google-discover/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/remove-google-discover/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/remove-google-discover/</guid>
       <description>The issue. Google discover is the feed curated by Google to deliver articles and videos on (mostly) android smartphones: it&amp;rsquo;s often enabled by default and put on the phone home screen. As if this wasn&amp;rsquo;t annoying enough, sometimes it cannot be disabled in the Google App settings and need to be turned off via terminal.
 The solution(s). Turn off google discover in the settings. As already written here:
 In the Google App At the top right, tap your Profile picture or initial Settings General Turn off Discover If the option is available this should do the trick.</description>
@@ -77,20 +81,20 @@ In the Google App At the top right, tap your Profile picture or initial Settings
     
     <item>
       <title>Inner join con pandas</title>
-      <link>https://flyingwonton.github.io/post/inner-join/</link>
+      <link>https://nicolatheanalyst.github.io/post/inner-join/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/inner-join/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/inner-join/</guid>
       <description>Assumendo di avere due file con entrambi una colonna &amp;ldquo;Col1&amp;rdquo; da voler confrontare, con 5 (cinque) righe in python possiamo risparmiarci qualche improperio su Excel.
 import pandas as pdimport openpyxl #necessario per l&amp;#39;export in xlsxdf1 = pd.read_excel(&amp;#39;input.xlsx&amp;#39;) #assumiamo il primo file si chiami input.xlsxdf2 = pd.read_excel(&amp;#39;input2.xlsx&amp;#39;) #assumiamo il primo file si chiami input2.xlsxdf = pd.merge(df1, df2, on = &amp;#34;Col1&amp;#34;, how = &amp;#39;inner&amp;#39;) #si crea un nuovo df dove vengono mantenute solo le righe in cui c&amp;#39;è corrispondenza tra &amp;#34;Col1&amp;#34; nel df1 e &amp;#34;Col1&amp;#34; del df2df.</description>
     </item>
     
     <item>
       <title>Come lasciare uno script avviato da remoto</title>
-      <link>https://flyingwonton.github.io/post/keep-running-ssh/</link>
+      <link>https://nicolatheanalyst.github.io/post/keep-running-ssh/</link>
       <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/keep-running-ssh/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/keep-running-ssh/</guid>
       <description>In breve, (tra le varie possibilità) attraverso il comando nohup, il quale:
 esegue un altro comando facendogli ignorare il segnale SIGHUP, in modo da permettergli di proseguire l&amp;rsquo;esecuzione anche in caso di una disconnessione dal terminale, o della chiusura dell&amp;rsquo;emulatore di terminale.
 Ovvero:
@@ -99,10 +103,10 @@ sudo nohup python3 script.py &amp;amp; </description>
     
     <item>
       <title>Concatenazione di celle verticali su Excel</title>
-      <link>https://flyingwonton.github.io/post/concatenate/</link>
+      <link>https://nicolatheanalyst.github.io/post/concatenate/</link>
       <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/concatenate/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/concatenate/</guid>
       <description>L&amp;rsquo;esigenza è particolarmente banale ma visto che mi ci sono imbattuto più di qualche volta, vale la pena segnarsela.
 Come concatenare celle verticali su Excel La situazione di partenza è la seguente:
 elemento1 elemento2 elemento3 Per ottenere, ad esempio:
@@ -112,20 +116,20 @@ elemento1;elemento2;elemento3; È sufficiente, iniziare una formula e selezionar
     
     <item>
       <title>Read more?</title>
-      <link>https://flyingwonton.github.io/post/read-more/</link>
+      <link>https://nicolatheanalyst.github.io/post/read-more/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/read-more/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/read-more/</guid>
       <description>Per quanto read more alla fine dei post si presti perfettamente allo scopo, una delle feature di Hugo è sicuramente la sua capacità di personalizzazione.
 Come personalizzare il read more in Hugo È una cosa estremamente banale ma non avendola trovata altrove la segno di seguito. Di default, Hugo prende dal file di configurazione config.toml la stringa da apporre. Segue un estratto del file, si faccia riferimento al parametro &amp;ldquo;readMore&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://flyingwonton.github.io/about/</link>
+      <link>https://nicolatheanalyst.github.io/about/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/about/</guid>
+      <guid>https://nicolatheanalyst.github.io/about/</guid>
       <description>Ciao Non ho talenti o expertise particolari. Mi rompo la testa sulle cose finché non funzionano.
 Se come disse Damian Conway:
 Documentation is a love letter that you write to your future self.
@@ -134,10 +138,10 @@ Questa può essere considerata una raccolta di post piena di sentimento.</descri
     
     <item>
       <title>Deployare Hugo su GitHub pages</title>
-      <link>https://flyingwonton.github.io/post/hello/</link>
+      <link>https://nicolatheanalyst.github.io/post/hello/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://flyingwonton.github.io/post/hello/</guid>
+      <guid>https://nicolatheanalyst.github.io/post/hello/</guid>
       <description>Questo sito è basato su Hugo, generatore di siti statici scritto in Go. Hugo crea siti veloci e relativamente semplici da far girare. L&amp;rsquo;inghippo sta nel relativamente.
 Gli assunti da cui parto sono i seguenti:
 Hugo è stato installato. Diversamente, si faccia riferimento qui. Il setup di Hugo e la configurzione del tema è stato completato e testato in locale. Deploy su GitHub Pages A questo punto, l&amp;rsquo;unica cosa che manca è deployare Hugo.</description>
