@@ -157,7 +157,7 @@ Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the c
 </span></span><span style="display:flex;"><span>GETCOLORINDEX <span style="color:#f92672">=</span> cell.Interior.ColorIndex
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">End</span> <span style="color:#66d9ef">Function</span>
 </span></span></code></pre></div><p>Just select the coloured cell you need to pick the colour index from, and you&rsquo;ll get the corresponding integer.</p>
-<p>Now, yes, <strong>hardcoding values is bad practice</strong>. Even in Excel, I guess. So to make the colour index dynamic, you can get add another argument to the first function:</p>
+<p>Now, yes, <strong>hardcoding values is bad practice</strong>. Even in Excel, I guess. So to make the colour index dynamic, you can add another argument to the first function:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vb" data-lang="vb"><span style="display:flex;"><span><span style="color:#66d9ef">Function</span> <span style="color:#a6e22e">COUNTIFYELLOW</span>(CountRange <span style="color:#f92672">As</span> Range, ColourRange <span style="color:#f92672">As</span> Range)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">Dim</span> colour <span style="color:#f92672">As</span> <span style="color:#66d9ef">Integer</span>
 </span></span><span style="display:flex;"><span>colour <span style="color:#f92672">=</span> ColourRange.Interior.ColorIndex <span style="color:#75715e">&#39;get the colour from the cell in the second argument
@@ -173,7 +173,7 @@ Function COUNTIFYELLOW(CountRange As Range) &amp;#39;CountRange represents the c
 </span></span><span style="display:flex;"><span>COUNTIFYELLOW <span style="color:#f92672">=</span> TotalCount
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">End</span> <span style="color:#66d9ef">Function</span>
 </span></span></code></pre></div><p>With the second argument (ColourRange), point to the cell with the colour you are interested into getting and you are ready to go.</p>
-<p>Now, what if you need to manage more than one colour and more than one increment type? eg. add 1 if yellow and 0,5 if blu</p>
+<p>Now, what if you need to manage more than one colour and more than one increment type? Say, add 1 if &ldquo;yellow&rdquo; and 0,5 if &ldquo;blu&rdquo;</p>
 <p>This should do:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vb" data-lang="vb"><span style="display:flex;"><span><span style="color:#66d9ef">Function</span> <span style="color:#a6e22e">COUNTIFYELLOW</span>(CountRange <span style="color:#f92672">As</span> Range)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">Dim</span> yellow <span style="color:#f92672">As</span> <span style="color:#66d9ef">Integer</span>
