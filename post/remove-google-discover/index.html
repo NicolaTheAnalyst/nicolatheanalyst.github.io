@@ -150,7 +150,7 @@ In the Google App At the top right, tap your Profile picture or initial Settings
 <p><strong>If</strong> the option is available this should do the trick.</p>
 <h3 id="turn-off-google-discover-with-adb">Turn off google discover with Adb.<a href="#turn-off-google-discover-with-adb" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <ul>
-<li><a href="https://developer.android.com/studio/debug/dev-options">Enable developer tools</a> on your phone</li>
+<li><a href="https://developer.android.com/studio/debug/dev-options">Enable developer tools</a> on your phone (and enalbe USB debugging)</li>
 <li>Install Adb (How? Downloading and installing Android Studio is the easiest way - however standalone adb installation are also available)</li>
 <li>Connect the phone to the computer with a USB cable (sure, <a href="https://developer.android.com/studio/command-line/adb#connect-to-a-device-over-wi-fi-android-11+">Android 11 and higher supports deploying and debugging wirelessly</a> but via USB is the easiest way)
 with the command:</li>
@@ -163,7 +163,7 @@ with the command:</li>
 <li>Once you are connected use this command from the computer console to disable google discover:</li>
 </ul>
 <blockquote>
-<p>adb shell pm disable-user &ndash;user 0 com.google.android.googlequicksearchbox</p>
+<p>adb shell pm disable-user com.google.android.googlequicksearchbox</p>
 </blockquote>
 <ul>
 <li>Afterwards, you can reboot your phone with the command:</li>
